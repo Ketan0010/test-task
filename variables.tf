@@ -56,11 +56,6 @@ variable "container_port" {
   default     = 80
 }
 
-variable "image_url" {
-  description = "URL of the container image in ECR"
-  type        = string
-}
-
 variable "sns_topic_arn" {
   description = "ARN of SNS topic for CloudWatch alarm notifications"
   type        = string
