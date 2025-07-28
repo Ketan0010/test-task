@@ -19,7 +19,7 @@ This setup provisions a simplified, production-grade environment on AWS using EC
 ### 1. Prerequisites
 - Terraform v1.3+
 - AWS CLI configured with access
-- SSH Key pair created in AWS (`my-keypair`)
+- SSH Key pair created in AWS (`task-key`)
 
 ### 2. Initialize and Apply
 ```bash
