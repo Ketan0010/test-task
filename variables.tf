@@ -61,3 +61,7 @@ variable "instance_type" {
   type        = string
   default     = "t3.micro"
 }
+variable "repository_name" {
+  description = "Name of the ECR repository"
+  default     = "my-repo"
+}
