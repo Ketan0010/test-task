@@ -13,22 +13,22 @@ variable "vpc_cidr" {
 
 variable "public_subnets" {
   description = "List of public subnet CIDRs"
-  default     = ["10.0.1.0/24", "10.0.2.0/24"]
+  default     = {"10.0.1.0/24", "10.0.2.0/24"}
 }
 
 variable "private_subnets" {
   description = "List of private subnet CIDRs"
-  default     = ["10.0.3.0/24", "10.0.4.0/24"]
+  default     = {"10.0.3.0/24", "10.0.4.0/24"}
 }
 
 variable "availability_zones" {
   description = "List of availability zones"
-  default     = ["eu-west-1a", "eu-west-1b"]
+  default     = {"eu-west-1a", "eu-west-1b"}
 }
 
 variable "key_name" {
   description = "SSH key pair name for bastion host"
-  default     = "task-key.pem"
+  default     = "task-key"
 }
 
 variable "db_username" {
